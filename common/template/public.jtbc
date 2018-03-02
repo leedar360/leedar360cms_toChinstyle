@@ -27,7 +27,7 @@
 <div class="wrap">
   <div class="header">
     <div class="desk"></div>
-    <div class="logo"><a href="{$=getActualRoute('./')}">Leeda360 --> {$=THEME} </a></div>
+    <div class="logo"><a href="{$=getActualRoute('./')}">JTBC</a></div>
     <div class="menu" mode="pitchon" pitchon="li[name='menu{$=$genre}']">
       <ul>
         <li name="menu"><a href="{$=getActualRoute('./')}">{$=take('.public.menu-1', 'lng')}</a></li>
@@ -46,11 +46,18 @@
     </item>
     <item>
       <name><![CDATA[footer]]></name>
-      <default><![CDATA[  
-			<div class="footer">
-			
-
-<div id="footer">
+      <default><![CDATA[  <div class="footer">
+    <div class="copyright">&copy; 2004-{$=formatDate($getDateTime(), '-1')} <a href="http://www.jtbc.cn/">JTBC</a>(<a href="http://www.jtbc.cn/">CMS</a>) All Rights Reserved.<br /><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备14034375号-1</a></div>
+  </div>
+</div>
+<script type="text/javascript">$(document).ready(function() { jtbc.frontend.ready(); });</script>
+</body>
+</html>]]></default>
+    </item>
+    
+    <item>
+      <name><![CDATA[chinastyle_footer]]></name>
+      <default><![CDATA[  <div id="footer">
 	<div class="foot">
     	<ul class="foot_nav f_l">
             <li class="foot_nav_1">我们的产品</li>
@@ -60,62 +67,87 @@
             <li>诗词中国微信</li>
             <li>书法中国微信</li>
         </ul>
-
-		<ul class="foot_nav f_l" style="width:237px;">
-			<li class="foot_nav_1">我们的品牌</li>
-			<li><a href="/zbwh/132877/index.html">诗词中国</a></li>
-			<li><a href="/zbwh/132881/index.html">书法中国</a></li>
-			<li><a href="/zbwh/132885/index.html">国学交流</a></li>
-		</ul>
-
-		<div class="foot_ewm f_l">
-			<img src="/jtbc/common/images/erweima.jpg"><br><img src="/jtbc/common/images/sys.png" style="margin-top:10px;">
-		</div>
-
-		<div class="foot_dz f_l">
-			<!--<p><span>宣传语　 :</span>中版文化传播（北京）有限公司</p>-->
-			<p><span>联系电话 :</span><b>+86(10)63261072</b></p>
-			<p><span>通讯地址 :</span>北京丰台区太平桥西里38号</p>
-			<p><span>E-mail　 :</span><b> public@chinstyle.com</b></p>
-			<p><span>网站备案号:</span><b> 京ICP备15020098号</b></p>
-		</div>
-        
-		<div class="clear"></div>
-
-		<div class="bq">
-			版权所有 : 中版文化传播（北京）有限公司
-		</div>
-
-	</div>
-
-</div>
-
-
-
-
-
-				<div class="copyright">
-					&copy; 2004-{$=formatDate($getDateTime(), '-1')} <a href="http://www.leedar360.com/">Leedar360</a>(<a href="http://www.leedar360.com/">CMS</a>) All Rights Reserved.<br /><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备14034375号-1</a>
-				</div>
-			</div>
+        <ul class="foot_nav f_l" style="width:237px;">
+        	<li class="foot_nav_1">我们的品牌</li>
+            <li><a href="zbwh/132877/index.html">诗词中国</a></li>
+            <li><a href="zbwh/132881/index.html">书法中国</a></li>
+            <li><a href="zbwh/132885/index.html">国学交流</a></li>
+        </ul>
+        <div class="foot_ewm f_l"><img src="{$=$global.assetspath}/images/footer/erweima.jpg"><br><img src="{$=$global.assetspath}/themes/{$=THEME}/icon/footer/sys.png" style="margin-top:10px;"></div>
+        <div class="foot_dz f_l">
+        	<!--<p><span>宣传语　 :</span>中版文化传播（北京）有限公司</p>-->
+            <p><span>联系电话 :</span><b>+86(10)63261072</b></p>
+            <p><span>通讯地址 :</span>北京丰台区太平桥西里38号</p>
+            <p><span>E-mail　 :</span><b> public@chinstyle.com</b></p>
+ <p><span>网站备案号:</span><b> 京ICP备15020098号</b></p>
+        </div>
+        <div class="clear"></div>
+    </div>
+	<div class="bq">版权所有 : 中版文化传播（北京）有限公司</div>
 </div>
 <script type="text/javascript">$(document).ready(function() { jtbc.frontend.ready(); });</script>
 </body>
 </html>]]></default>
     </item>
     <item>
-      <name><![CDATA[chinstyleheader]]></name>
+      <name><![CDATA[chinastyle_banner]]></name>
+      <default><![CDATA[ <!--banner--> 
+  <div class="banner column" id="bann" runat="server" name="首页轮播">
+     <div class="portlet" id="9c249b996bb74bf3b8d2b2ddc3b1a26e"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenu9c249b996bb74bf3b8d2b2ddc3b1a26e" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<div class="sc_img" id="slideContainer"> 
+ <ul class="slideshow" id="slidesImgs"> 
+  <li style="background:url(zbwh/resource/cms/2015/12/2015120216312755635.jpg) no-repeat center top;"><a href="javascript:;"></a></li>
+  <li style="background:url(zbwh/resource/cms/2015/12/2015120216312755635.jpg) no-repeat center top;"><a href="javascript:;"></a></li> 
+ </ul> 
+ <div class="slidebar" id="slideBar"> 
+  <ul> 
+   <script>
+				$(function(){
+					var sl=$('#slidesImgs li').length;
+					for(var i=0;i<sl;i++){
+						if(i==0){
+							$('#slideBar ul').append("<li class='on'>"+(i+1)+"</li>")	
+						}else{
+							$('#slideBar ul').append("<li>"+(i+1)+"</li>")	
+						}
+						
+					}   
+				})
+				</script> 
+  </ul> 
+ </div> 
+ <script type="text/javascript">
+    SlideShow(5000);
+    </script> 
+</div> 
+ </div> 
+</div>   </div> 
+  <!--end banner--> ]]></default>
+    </item>
+    <item>
+      <name><![CDATA[chinastyle_header]]></name>
       <default><![CDATA[<!DOCTYPE html><!--头部-->
 <html>
  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>首页　中版文化</title>
-<meta  name="页面生成时间" content="2017-07-21 03:56:02" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>{$=htmlEncode($getPageTitle())}</title>
+  <meta  name="页面生成时间" content="2017-07-21 03:56:02" />
 <meta name="keywords" content="  " />
 <meta name="description" content=" 中版文化默认频道  " />
 <link rel="stylesheet" type="text/css" media="screen" href="zbwh/uiFramework/huilan-jquery-ui/css/huilan-jquery-ui.css" />
-<script type="text/javascript" src="zbwh/uiFramework/huilan-jquery-ui/js/huilan-jquery-ui.js?self=true&skin=default"></script>
-   
-   <title>{$=htmlEncode($getPageTitle())}</title>
+<script type="text/javascript" src="{$=$global.assetspath}/js/huilan-jquery-ui.js?self=true&skin=default"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/zbwh.js"></script>   
@@ -124,48 +156,21 @@
    
  </head>
  <body>
-  <link rel="stylesheet" type="text/css" media="screen" href="zbwh/template/page/index/skin.css" /> 
-  <script type="text/javascript" src="zbwh/template/page/index/slideshow.js"></script><div style="display:none" easysite="easysiteHiddenDiv">
-	<input id="contextPath" value="/eportal" type="hidden"/>
-	<input id="isOnlyUseCkeditorSourceMode" value="$isOnlyUseCkeditorSourceMode" type="hidden"/>
-	<input id="eprotalCurrentPageId" value="132798" type="hidden"/>
-	<input id="eprotalCurrentSiteId" value="132797" type="hidden"/>
-	<input id="eprotalCurrentArticleKey"  value=""  type="hidden"/>
-	<input id="eprotalCurrentColumnId"  value=""  type="hidden"/>
-	<input id="isStaticRequest" value="yes" type="hidden"/>
-	<input id="isOpenStaticPageList" value="no" type="hidden"/>
-	<input id="defaultPublishPage" value="10" type="hidden"/>
-	<input type='hidden' id='eportalappPortletId' value="3">
-	<input type='hidden' id='epsPortletId' value="1">
-	<script type="text/javascript" src="zbwh/uiFramework/js/counting/chanelCounting.js"></script>
-	<input type="hidden" id="ckEditorUploadFileUrl" value="/eportal/ui?moduleId=2&pageId=132798&struts.portlet.action=/portlet/uploadFile.action&isCkEditor=true"/>
-	<input type="hidden" id="sDtoLoginUrl" value="moduleId=3&pageId=132798&struts.portlet.action=/app/member!sDtoLogin.action"/>
-	<input type="hidden" id="memberLoginUrl" value="/eportal/ui?moduleId=3&pageId=132798&struts.portlet.action=/app/member!toLogin.action"/>
-	<input type="hidden" id="currentLoginMemberId"  value="" />
-	<input type="hidden" id="currentLoginMemberName"  value="" />
-	<input type="hidden" id="behaviourAnalysisSiteId"  value="" /> 
-	<input type="hidden" id="isOpenArticleScan" value="yes"/>
-		<input type="hidden" id="voteUrl" value="/eportal/ui?moduleId=1&pageId=132798&struts.portlet.action=/portlet/article!vote.action"/>
-	<input type="hidden" id="getVoteCount" value="/eportal/ui?moduleId=1&pageId=132798&struts.portlet.action=/portlet/article!getVoteCount.action"/>
-	<input type="hidden" id="getHotWordRelativeArticle" value="/eportal/ui?moduleId=1&pageId=132798&struts.portlet.action=/portlet/article!getHotWordRelativeArticle.action&staticRequest=yes"/>
-	<input type="hidden" id="deleteArticleUrl" value="/eportal/ui?moduleId=1&pageId=132798&struts.portlet.action=/portlet/article!deleteArticle.action"/>
-	<input type="hidden" id="toSnsLoginUrl" value="/eportal/ui?moduleId=3&pageId=132798&struts.portlet.action=/app/member-sns-login!toSnsLogin.action"/>
-	<input type="hidden" id="portalLastRequestUrl"  value="" />
+  <link rel="stylesheet" type="text/css" media="screen" href="{$=$global.assetspath}/themes/{$=THEME}/skin.css" /> 
+  <script type="text/javascript" src="{$=$global.assetspath}/js/slideshow.js"></script><div style="display:none" easysite="easysiteHiddenDiv">
 </div><style>
 #header{background-size: 60% auto;}
 </style>
 <div id="header">
-	<div class="head">
-    	<!--logo-->
-        <div class="logo f_l"><img src="/jtbc/common/images/logo.png" width="395" height="158"></div>
+  <div class="head">
+      <!--logo-->
+        <div class="logo f_l"><img src="{$=$global.assetspath}/images/header/logo.png" width="395" height="158"></div>
         <!--电话-->
         <div class="tel f_r"><div class="bdsharebuttonbox" style="float:left; display:inline;"><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div><span>TEL : +86(10)63261072</span></div>
         <!--搜索-->
       <div class="search f_r">
    <div class="search_1">
        <form id="mySearchFormAction" class="search_form" method="post" action="/search/pcRender?pageId=71429fc2fa0145159a9dc774d5a5f133">
-      <input type="hidden" name="originalSearchUrl" id="originalSearchUrl" value=""/>
-      <input type="hidden" name="originalSearch" id="originalSearch" value=""/>
       <input id="searchBoxApp" type="hidden" name="app" value=""/>
       <input id="searchBoxAppName" type="hidden" name="appName" value=""/>
       <input type="hidden" name="sr" id="sr" value=""/>
@@ -178,85 +183,29 @@
 </div>
         <!--导航-->
         <div class="nav f_r">
-        	<ul>
-            	<li><span><a href="zbwh/index/index.html">网站首页</a></span></li>
+          <ul>
+              <li><span><a href="zbwh/index/index.html">网站首页</a></span></li>
                 <li><span><a href="zbwh/132864/index.html">关于我们</a></span>
-                	<div class="erji_nav">
-                        <img src="zbwh/template/common/header/nav_bg1.png">
+                  <div class="erji_nav">
+                        <img src="{$=$global.assetspath}/images/header/nav_bg1.png">
                         <p><a href="zbwh/132864/index.html">公司简介</a><a href="zbwh/132868/index.html">大事记</a></p>
-                        <img src="zbwh/template/common/header/nav_bg2.png">
+                        <img src="{$=$global.assetspath}/images/header/nav_bg2.png">
                     </div>
                 </li>
                 <li><span><a href="zbwh/132821/index.html">动态播报</a></span></li>
                 <li><span><a href="zbwh/132825/index.html">媒体视角</a></span></li>
                 <li><span><a href="zbwh/132877/index.html">热点活动</a></span>
-                	<div class="erji_nav">
-                        <img src="zbwh/template/common/header/nav_bg1.png">
+                  <div class="erji_nav">
+                        <img src="{$=$global.assetspath}/images/header/nav_bg1.png">
                         <p><a href="zbwh/132877/index.html">诗词中国</a><a href="zbwh/132881/index.html">书法中国</a><a href="zbwh/132885/index.html">国学交流</a></p>
-                        <img src="zbwh/template/common/header/nav_bg2.png">
+                        <img src="{$=$global.assetspath}/images/header/nav_bg2.png">
                     </div>
                 </li>
                 <li><span><a href="zbwh/132849/index.html">联系我们</a></span></li>
             </ul>
         </div>
     </div>
-</div>  <!--end 头部--> ]]></default>
-    </item>
-    <item>
-      <name><![CDATA[chinstylefooter]]></name>
-      <default><![CDATA[ <script>
-$(".cpzx_list li").mouseover(function(){
-	$(this).find(".cp_ewm").show()
-	$(this).find("a").css("color","#c90000")
-})
-$(".cpzx_list li").mouseout(function(){
-	$(".cpzx_list li .cp_ewm").hide()
-	$(".cpzx_list li a").css("color","#616161")
-})
-</script> 
-  <!--底部--><div id="footer">
-	<div class="foot">
-    	<ul class="foot_nav f_l">
-            <li class="foot_nav_1">我们的产品</li>
-            <li>中华诗词网</li>
-            <li>中华诗词论坛</li>
-            <li>诗词中国客户端</li>
-            <li>诗词中国微信</li>
-            <li>书法中国微信</li>
-        </ul>
-        <ul class="foot_nav f_l" style="width:237px;">
-        	<li class="foot_nav_1">我们的品牌</li>
-            <li><a href="http://www.chinstyle.com/zbwh/132877/index.html">诗词中国</a></li>
-            <li><a href="http://www.chinstyle.com/zbwh/132881/index.html">书法中国</a></li>
-            <li><a href="http://www.chinstyle.com/zbwh/132885/index.html">国学交流</a></li>
-        </ul>
-        <div class="foot_ewm f_l"><img src="./chinstyle_files/erweima.jpg"><br><img src="./chinstyle_files/sys.png" style="margin-top:10px;"></div>
-        <div class="foot_dz f_l">
-        	<!--<p><span>宣传语　 :</span>中版文化传播（北京）有限公司</p>-->
-            <p><span>联系电话 :</span><b>+86(10)63261072</b></p>
-            <p><span>通讯地址 :</span>北京丰台区太平桥西里38号</p>
-            <p><span>E-mail　 :</span><b> public@chinstyle.com</b></p>
- 				  <p><span>网站备案号:</span><b> 京ICP备15020098号</b></p>
-        </div>
-        <div class="clear"></div>
-    </div>
-	<div class="bq">版权所有 : 中版文化传播（北京）有限公司</div>
-</div>
-<script>
-window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-</script>
-<style>
-.bdshare-button-style0-16{ padding:0; margin:0;}
-.bdshare-button-style0-16 a{ padding:0; margin:0 0 0 14px; vertical-align:middle; background:none; display:block; float:left;}
-.bdshare-button-style0-16 .bds_weixin{ background:url(/zbwh/template/common/footer/icon_wx.png) no-repeat left top; background:url(/zbwh/template/common/footer/icon_wx.png) no-repeat left top!important; width:28px; height:22px;padding:0; margin:0 0 0 14px; line-height:22px;}
-.bdshare-button-style0-16 .bds_tsina{ background:url(/zbwh/template/common/footer/icon_wb.png) no-repeat left top; background:url(/zbwh/template/common/footer/icon_wb.png) no-repeat left top!important; width:25px; height:22px; padding:0; margin:0 0 0 14px; line-height:22px;}
-</style>  <!--end 底部--><div style="display:none" easysite="easysiteHiddenDiv">
-<input type="hidden" id="currentLoginUserLoginName">
-</div> 
-<a href="http://www.huilan.com/" style="display:none">中科汇联承办，easysite内容管理系统，portal门户，舆情监测，搜索引擎，政府门户，信息公开，电子政务</a>
-<div id="cntvlive2-is-installed"></div>
-
-</body></html>]]></default>
+</div>  <!--end 头部--> <p></p>]]></default>
     </item>
   </item_list>
 </xml>

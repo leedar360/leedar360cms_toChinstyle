@@ -8,14 +8,360 @@
   <item_list>
     <item>
       <name><![CDATA[default]]></name>
-      <default><![CDATA[{$=take('.public.chinstyleheader')}
-
+      <default><![CDATA[{$=take('.public.chinastyle_header')}
   <div class="home">
-    <div class="banner">
-      <h2>{$=take('index.slogan', 'lng')}</h2>
-      <h3>{$=take('index.intro', 'lng')}</h3>
-      <a class="more" href="{$=getActualRoute('aboutus')}">{$=take('index.text-more', 'lng')}</a>
-    </div>
+   
+     <!--banner--> 
+  <div class="banner column" id="bann" runat="server" name="首页轮播">
+     <div class="portlet" id="9c249b996bb74bf3b8d2b2ddc3b1a26e"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+   
+  <div id="submenu9c249b996bb74bf3b8d2b2ddc3b1a26e" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<div class="sc_img" id="slideContainer"> 
+ <ul class="slideshow" id="slidesImgs"> 
+  <li style="background:url({$=$global.assetspath}/images/banner/2015120216312755635.jpg) no-repeat center top;"><a href="javascript:;"></a></li>
+  <li style="background:url({$=$global.assetspath}/images/banner/2015120216312755635.jpg) no-repeat center top;"><a href="javascript:;"></a></li> 
+ </ul> 
+ <div class="slidebar" id="slideBar"> 
+  <ul> 
+   <script>
+				$(function(){
+					var sl=$('#slidesImgs li').length;
+					for(var i=0;i<sl;i++){
+						if(i==0){
+							$('#slideBar ul').append("<li class='on'>"+(i+1)+"</li>")	
+						}else{
+							$('#slideBar ul').append("<li>"+(i+1)+"</li>")	
+						}
+						
+					}   
+				})
+				</script> 
+  </ul> 
+ </div> 
+ <script type="text/javascript">
+    SlideShow(5000);
+    </script> 
+</div> 
+ </div> 
+</div>   </div> 
+  <!--end banner--> 
+    
+    
+    <!--内容--> 
+  <div class="main"> 
+   <!--动态播报--> 
+   <div class="news_list w364 f_l"> 
+    <div class="title_1"> 
+     <span>{$=take('global.hotact:index.title', 'lng')}</span> 
+     <a class="more1" href="zbwh/132821/index.html">更多+</a> 
+    </div> 
+    <div style="HEIGHT: 160px" id="dtbb" runat="server" name="动态播报" class=" column">
+       <div class="portlet" id="8ae19fceaad8466ba26f3229847cbd4d"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenu8ae19fceaad8466ba26f3229847cbd4d" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   <ul class="list1"> 
+ <jtbc $function="transfer" $parameter="genre=hotact;type=new;limit=5">
+            
+    <li><span>21 / 07</span><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
+          </jtbc>  
+</ul> 
+
+ </div> 
+</div>     </div> 
+   </div> 
+   <!--书法中国专区--> 
+   <div class="news_list w614 f_r"> 
+    <div class="title_1"> 
+     <span>书法中国专区</span> 
+     <em><img src="zbwh/template/page/index/sfzgizimg.jpg" /></em> 
+     <a class="more1" href="zbwh/132881/index.html">更多+</a> 
+    </div> 
+    <div style="HEIGHT: 160px" id="sfzgzq" runat="server" name="书法中国专区" class=" column">
+       <div class="portlet" id="d7b534abd89a4497b7068f57662aea3b"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenud7b534abd89a4497b7068f57662aea3b" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<div class="list_img f_l"> 
+</div> 
+<script>
+var img0=$(".img0").html();
+var sp0=$(".sp0").html();
+
+if(img0.length>0){
+$(".img0").show()
+$(".sp0").hide()
+}else if(sp0.length>0){
+$(".img0").hide()
+$(".sp0").show()
+}
+</script> 
+ </div> 
+</div>  <div class="portlet" id="f49eb496dc9041999467b3d0463c13ef"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenuf49eb496dc9041999467b3d0463c13ef" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<ul class="list2 f_l"> 
+ <li><a href="zbwh/132881/142365/index.html" onclick="void(0)" target="_blank" title="首届“书法中国”全民书法大赛在京颁奖">首届“书法中国”全民书法大赛在...</a></li>
+ <li><a href="zbwh/132881/142082/index.html" onclick="void(0)" target="_blank" title="首届“书法中国”全民书法大赛终评会圆满举行">首届“书法中国”全民书法大赛终...</a></li>
+ <li><a href="zbwh/132881/140525/index.html" onclick="void(0)" target="_blank" title="捐助是真诚的 爱心是无价的">捐助是真诚的 爱心是无价的</a></li>
+ <li><a href="zbwh/132881/135147/index.html" onclick="void(0)" target="_blank" title="首届“书法中国”全民书法大赛赛事介绍">首届“书法中国”全民书法大赛赛...</a></li>
+ <li><a href="zbwh/132881/135144/index.html" onclick="void(0)" target="_blank" title="首届“书法中国”全民书法大赛参赛办法">首届“书法中国”全民书法大赛参...</a></li> 
+</ul> 
+ </div> 
+</div>     </div> 
+    <div class="clear"></div> 
+   </div> 
+   <div class="clear"></div> 
+   <!--媒体视角--> 
+   <div class="news_list w364 f_l"> 
+    <div class="title_1"> 
+     <span>媒体视角</span> 
+     <a class="more1" href="zbwh/132825/index.html">更多+</a> 
+    </div> 
+    <div style="HEIGHT: 160px" id="mtsj" runat="server" name="媒体视角" class=" column">
+       <div class="portlet" id="5f8cade761194fc4be0f0e70a318cf9a"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenu5f8cade761194fc4be0f0e70a318cf9a" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<ul class="list1"> 
+ <li><span>17 / 07</span><a href="zbwh/132825/143089/index.html" onclick="void(0)" target="_blank" title="中国出版集团“诗词中国”入驻淮安">中国出版集团“诗词中国”入驻淮安</a></li>
+ <li><span>14 / 07</span><a href="zbwh/132825/143078/index.html" onclick="void(0)" target="_blank" title="江苏淮安与中国出版集团启动全球华语诗词大赛">江苏淮安与中国出版集团启动全球华...</a></li>
+ <li><span>22 / 09</span><a href="zbwh/132825/142190/index.html" onclick="void(0)" target="_blank" title="海南七旬老人获评 “网络影响力诗人">海南七旬老人获评 “网络影响力诗...</a></li>
+ <li><span>22 / 09</span><a href="zbwh/132825/142187/index.html" onclick="void(0)" target="_blank" title="余秀华谈诗歌美学：&quot;好诗能写难以言表&quot;">余秀华谈诗歌美学：&quot;好诗能写难以...</a></li>
+ <li><span>22 / 09</span><a href="zbwh/132825/142184/index.html" onclick="void(0)" target="_blank" title="第三届“诗词中国”传统诗词创作大赛启动">第三届“诗词中国”传统诗词创作大...</a></li> 
+</ul> 
+ </div> 
+</div>     </div> 
+   </div> 
+   <!--诗词中国专区--> 
+   <div class="news_list w614 f_r"> 
+    <div class="title_1"> 
+     <span>诗词中国专区</span> 
+     <em><img src="zbwh/template/page/index/img_sfzc.png" /></em> 
+     <a class="more1" href="zbwh/132877/index.html">更多+</a> 
+    </div> 
+    <div style="HEIGHT: 160px" id="sczgzq" runat="server" name="诗词中国专区" class=" column">
+       <div class="portlet" id="626a8d015cea4abfaec8b62338fcb0b1"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenu626a8d015cea4abfaec8b62338fcb0b1" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<ul class="list2 f_l"> 
+ <li><a href="zbwh/132877/142358/index.html" onclick="void(0)" target="_blank" title="诗词中国发布新版“诗词地图” 湖南人最爱写诗">诗词中国发布新版“诗词地图” ...</a></li>
+ <li><a href="zbwh/132877/142347/index.html" onclick="void(0)" target="_blank" title="诗词中国APP 2.0版升级上线">诗词中国APP 2.0版升级上...</a></li>
+ <li><a href="zbwh/132877/142158/index.html" onclick="void(0)" target="_blank" title="第三届“诗词中国”7月月度创作奖揭晓，7月复活机制启动~">第三届“诗词中国”7月月度创作...</a></li>
+ <li><a href="zbwh/132877/142155/index.html" onclick="void(0)" target="_blank" title="诗心已共春花发：以文化自信重建“诗的国度”">诗心已共春花发：以文化自信重建...</a></li>
+ <li><a href="zbwh/132877/142152/index.html" onclick="void(0)" target="_blank" title="热烈祝贺中华诗词论坛发帖量突破3000万">热烈祝贺中华诗词论坛发帖量突破...</a></li> 
+</ul> 
+ </div> 
+</div>  <div class="portlet" id="0ac745c9520842979c963a35ff88c9c0"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenu0ac745c9520842979c963a35ff88c9c0" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<div class="list_img f_l"> 
+ <span style="display:none" class="sp02"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="/download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="287" height="153"> <param name="movie" value="zbwh/uiFramework/images/zbwh_img/vcastr22.swf?vcastr_file=eportal/immovableDir/zbwh/resource/cms/2015/12/2015120210243915934.mp4"></param> <param name="quality" value="high"></param> <param name="allowFullScreen" value="true"></param> <embed src="zbwh/uiFramework/images/zbwh_img/vcastr22.swf?vcastr_file=eportal/immovableDir/zbwh/resource/cms/2015/12/2015120210243915934.mp4" allowfullscreen="true" quality="high" pluginspage="/www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="287" height="153" /> </object> </span> 
+ <span style="display:none" class="img02"></span> 
+</div> 
+<script>
+var img02=$(".img02").html();
+var sp02=$(".sp02").html();
+if(img02.length>0){
+$(".img02").show()
+$(".sp02").hide()
+}else if(sp02.length>0){
+$(".img02").hide()
+$(".sp02").show()
+}
+</script> 
+ </div> 
+</div>     </div> 
+    <div class="clear"></div> 
+   </div> 
+   <div class="clear"></div> 
+   <!--相关资源--> 
+   <div class="news_list w364 f_l"> 
+    <div class="title_1"> 
+     <span>相关资源</span> 
+     <a class="more1" href="zbwh/132833/index.html">更多+</a> 
+    </div> 
+    <div style="HEIGHT: 160px" id="xgzy" runat="server" name="相关资源" class=" column">
+       <div class="portlet" id="a01e20fd902849f981d42d039248b8e4"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenua01e20fd902849f981d42d039248b8e4" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<ul class="list1"> 
+ <li><span>29 / 11</span><a href="zbwh/132833/142307/index.html" onclick="void(0)" target="_blank" title="诗词中国APP 2.0版升级上线">诗词中国APP 2.0版升级上线</a></li>
+ <li><span>01 / 12</span><a href="zbwh/132833/135108/index.html" onclick="void(0)" target="_blank" title="盘点：第二届“诗词中国”遭遇神投稿">盘点：第二届“诗词中国”遭遇神投...</a></li>
+ <li><span>01 / 12</span><a href="zbwh/132833/135097/index.html" onclick="void(0)" target="_blank" title="“我们不放过任何一首好诗”—— 第二届“诗词中国”传统诗词创作大赛启动复活机制">“我们不放过任何一首好诗”—— ...</a></li>
+ <li><span>01 / 12</span><a href="zbwh/132833/135094/index.html" onclick="void(0)" target="_blank" title="第二届“诗词中国”传统诗词创作大赛启动仪式">第二届“诗词中国”传统诗词创作大...</a></li>
+ <li><span>01 / 12</span><a href="zbwh/132833/135091/index.html" onclick="void(0)" target="_blank" title="第二届“诗词中国”传统诗词创作大赛新闻通气会">第二届“诗词中国”传统诗词创作大...</a></li> 
+</ul> 
+ </div> 
+</div>     </div> 
+   </div> 
+   <!--国学交流--> 
+   <div class="news_list w614 f_r"> 
+    <div class="title_1"> 
+     <span>国学交流</span> 
+     <a class="more1" href="zbwh/132885/index.html">更多+</a> 
+    </div> 
+    <div style="HEIGHT: 160px" id="gxjl" runat="server" name="国学交流" class=" column">
+       <div class="portlet" id="7aaebf66826644cda35ad815cd1b6dfb"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenu7aaebf66826644cda35ad815cd1b6dfb" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<div class="list_img f_l"> 
+</div> 
+<script>
+var img03=$(".img03").html();
+var sp03=$(".sp03").html();
+
+if(img03.length>0){
+$(".img03").show()
+$(".sp03").hide()
+}else if(sp03.length>0){
+$(".img03").hide()
+$(".sp03").show()
+}
+</script> 
+ </div> 
+</div>  <div class="portlet" id="b17edaadbea24db8aa90871d7d7b1523"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenub17edaadbea24db8aa90871d7d7b1523" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<ul class="list2 f_l"> 
+ <li><a href="zbwh/132885/135187/index.html" onclick="void(0)" target="_blank" title="国学爱好者平台加入渠道">国学爱好者平台加入渠道</a></li>
+ <li><a href="zbwh/132885/135184/index.html" onclick="void(0)" target="_blank" title="中国出版集团与“中国国学中心”签署联手推广国学备忘录">中国出版集团与“中国国学中心”...</a></li> 
+</ul> 
+ </div> 
+</div>     </div> 
+    <div class="clear"></div> 
+   </div> 
+   <div class="clear"></div> 
+   <!--产品中心--> 
+   <div style="MARGIN-BOTTOM: 0px" class="news_list w999 f_r"> 
+    <div class="title_1"> 
+     <span>产品中心</span> 
+    </div> 
+    <ul class="cpzx_list"> 
+     <li><a href="/www.zhsc.net/" target="_blank">中华诗词网</a></li> 
+     <li><a href="/bbs.zhsc.net/" target="_blank">中华诗词论坛</a></li> 
+     <li><a href="javascript:;">诗词中国客户端</a> 
+      <div style="WIDTH: 205px; TOP: -130px; LEFT: -40px" class="cp_ewm"> 
+       <p>安卓版客户端<br /><img src="zbwh/template/page/index/sczg_az.png" /></p> 
+       <p style="PADDING-LEFT: 5px">苹果版客户端<br /><img src="zbwh/template/page/index/sczg_pg.png" /></p> 
+      </div></li> 
+     <li><a href="javascript:;">诗词中国微信</a> 
+      <div class="cp_ewm"> 
+       <img src="zbwh/template/page/index/sczgzwh.jpg" /> 
+      </div></li> 
+     <li><a href="javascript:;">书法中国微信</a> 
+      <div class="cp_ewm"> 
+       <img src="zbwh/template/page/index/sfzg.jpg" /> 
+      </div></li> 
+     <li><a href="javascript:;">文创产品</a></li> 
+    </ul> 
+   </div> 
+   <div class="clear"></div> 
+  </div> 
+  <!--end 内容--> 
+{$=take('.public.chinastyle_footer')}]]></default>
+    </item>
+    
+    <item>
+      <name><![CDATA[chinastyle_index]]></name>
+      <default><![CDATA[{$=take('.public.chinstyleheader')}
+  <div class="home">
+    {$=take('.public.chinstyle_banner')}
     <div class="home_item">
       <h2>{$=take('global.case:index.title', 'lng')}</h2>
       <div class="cupboard">
@@ -57,11 +403,7 @@
       </div>
     </div>
   </div>
-{$=take('.public.footer')}]]></default>
-    </item>
-    <item>
-      <name><![CDATA[chinstyle]]></name>
-      <default><![CDATA[]]></default>
+{$=take('.public.chinastyle_footer')}]]></default>
     </item>
   </item_list>
 </xml>
