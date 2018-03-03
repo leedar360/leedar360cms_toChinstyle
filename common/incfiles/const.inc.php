@@ -15,7 +15,7 @@ define('DB', 'MySQL');
 define('DB_HOST', '127.0.0.1');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'jtbc');
+define('DB_DATABASE', 'jtbc3');
 define('DB_TABLE_PREFIX', 'jtbc_');
 define('LANGUAGE', 'zh-cn');
 define('SEPARATOR', ' - ');

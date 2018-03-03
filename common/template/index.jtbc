@@ -80,7 +80,7 @@
    <ul class="list1"> 
  <jtbc $function="transfer" $parameter="genre=hotact;type=new;limit=5">
             
-    <li><span>21 / 07</span><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
+    <li><span>{$=formatDate("{$time}", 23)}</span><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
           </jtbc>  
 </ul> 
 
@@ -151,7 +151,7 @@ $(".sp0").show()
    <!--媒体视角--> 
    <div class="news_list w364 f_l"> 
     <div class="title_1"> 
-     <span>媒体视角</span> 
+     <span>{$=take('global.media:index.title', 'lng')}</span> 
      <a class="more1" href="zbwh/132825/index.html">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="mtsj" runat="server" name="媒体视角" class=" column">
@@ -169,11 +169,12 @@ $(".sp0").show()
 
 
 <ul class="list1"> 
- <li><span>17 / 07</span><a href="zbwh/132825/143089/index.html" onclick="void(0)" target="_blank" title="中国出版集团“诗词中国”入驻淮安">中国出版集团“诗词中国”入驻淮安</a></li>
- <li><span>14 / 07</span><a href="zbwh/132825/143078/index.html" onclick="void(0)" target="_blank" title="江苏淮安与中国出版集团启动全球华语诗词大赛">江苏淮安与中国出版集团启动全球华...</a></li>
- <li><span>22 / 09</span><a href="zbwh/132825/142190/index.html" onclick="void(0)" target="_blank" title="海南七旬老人获评 “网络影响力诗人">海南七旬老人获评 “网络影响力诗...</a></li>
- <li><span>22 / 09</span><a href="zbwh/132825/142187/index.html" onclick="void(0)" target="_blank" title="余秀华谈诗歌美学：&quot;好诗能写难以言表&quot;">余秀华谈诗歌美学：&quot;好诗能写难以...</a></li>
- <li><span>22 / 09</span><a href="zbwh/132825/142184/index.html" onclick="void(0)" target="_blank" title="第三届“诗词中国”传统诗词创作大赛启动">第三届“诗词中国”传统诗词创作大...</a></li> 
+  
+  <jtbc $function="transfer" $parameter="genre=media;type=new;limit=5">
+            
+    <li><span>{$=formatDate("{$time}", 23)}</span><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
+          </jtbc>  
+  </li> 
 </ul> 
  </div> 
 </div>     </div> 

@@ -115,6 +115,9 @@ namespace jtbc {
         case '20':
           $tmpstr = date('m-d H:i', $date);
           break;
+        case '23':
+          $tmpstr = date('m / y', $date);
+          break;
         case '100':
           $tmpstr = date('Y-m-d H:i:s', $date);
           break;
