@@ -90,7 +90,7 @@
    <!--书法中国专区--> 
    <div class="news_list w614 f_r"> 
     <div class="title_1"> 
-     <span>书法中国专区</span> 
+     <span>{$=take('global.shufa:index.title', 'lng')}</span> 
      <em><img src="zbwh/template/page/index/sfzgizimg.jpg" /></em> 
      <a class="more1" href="zbwh/132881/index.html">更多+</a> 
     </div> 
@@ -137,11 +137,12 @@ $(".sp0").show()
 
 
 <ul class="list2 f_l"> 
- <li><a href="zbwh/132881/142365/index.html" onclick="void(0)" target="_blank" title="首届“书法中国”全民书法大赛在京颁奖">首届“书法中国”全民书法大赛在...</a></li>
- <li><a href="zbwh/132881/142082/index.html" onclick="void(0)" target="_blank" title="首届“书法中国”全民书法大赛终评会圆满举行">首届“书法中国”全民书法大赛终...</a></li>
- <li><a href="zbwh/132881/140525/index.html" onclick="void(0)" target="_blank" title="捐助是真诚的 爱心是无价的">捐助是真诚的 爱心是无价的</a></li>
- <li><a href="zbwh/132881/135147/index.html" onclick="void(0)" target="_blank" title="首届“书法中国”全民书法大赛赛事介绍">首届“书法中国”全民书法大赛赛...</a></li>
- <li><a href="zbwh/132881/135144/index.html" onclick="void(0)" target="_blank" title="首届“书法中国”全民书法大赛参赛办法">首届“书法中国”全民书法大赛参...</a></li> 
+  
+   <jtbc $function="transfer" $parameter="genre=shufa;type=new;limit=5">
+            
+    <li><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
+          </jtbc>  
+ 
 </ul> 
  </div> 
 </div>     </div> 
@@ -182,7 +183,7 @@ $(".sp0").show()
    <!--诗词中国专区--> 
    <div class="news_list w614 f_r"> 
     <div class="title_1"> 
-     <span>诗词中国专区</span> 
+     <span>{$=take('global.shici:index.title', 'lng')}</span> 
      <em><img src="zbwh/template/page/index/img_sfzc.png" /></em> 
      <a class="more1" href="zbwh/132877/index.html">更多+</a> 
     </div> 
@@ -201,11 +202,10 @@ $(".sp0").show()
 
 
 <ul class="list2 f_l"> 
- <li><a href="zbwh/132877/142358/index.html" onclick="void(0)" target="_blank" title="诗词中国发布新版“诗词地图” 湖南人最爱写诗">诗词中国发布新版“诗词地图” ...</a></li>
- <li><a href="zbwh/132877/142347/index.html" onclick="void(0)" target="_blank" title="诗词中国APP 2.0版升级上线">诗词中国APP 2.0版升级上...</a></li>
- <li><a href="zbwh/132877/142158/index.html" onclick="void(0)" target="_blank" title="第三届“诗词中国”7月月度创作奖揭晓，7月复活机制启动~">第三届“诗词中国”7月月度创作...</a></li>
- <li><a href="zbwh/132877/142155/index.html" onclick="void(0)" target="_blank" title="诗心已共春花发：以文化自信重建“诗的国度”">诗心已共春花发：以文化自信重建...</a></li>
- <li><a href="zbwh/132877/142152/index.html" onclick="void(0)" target="_blank" title="热烈祝贺中华诗词论坛发帖量突破3000万">热烈祝贺中华诗词论坛发帖量突破...</a></li> 
+ <jtbc $function="transfer" $parameter="genre=shici;type=new;limit=5">
+            
+    <li><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
+          </jtbc>  
 </ul> 
  </div> 
 </div>  <div class="portlet" id="0ac745c9520842979c963a35ff88c9c0"> 
@@ -244,7 +244,7 @@ $(".sp02").show()
    <!--相关资源--> 
    <div class="news_list w364 f_l"> 
     <div class="title_1"> 
-     <span>相关资源</span> 
+     <span>{$=take('global.relation_resource:index.title', 'lng')}</span> 
      <a class="more1" href="zbwh/132833/index.html">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="xgzy" runat="server" name="相关资源" class=" column">
@@ -262,11 +262,10 @@ $(".sp02").show()
 
 
 <ul class="list1"> 
- <li><span>29 / 11</span><a href="zbwh/132833/142307/index.html" onclick="void(0)" target="_blank" title="诗词中国APP 2.0版升级上线">诗词中国APP 2.0版升级上线</a></li>
- <li><span>01 / 12</span><a href="zbwh/132833/135108/index.html" onclick="void(0)" target="_blank" title="盘点：第二届“诗词中国”遭遇神投稿">盘点：第二届“诗词中国”遭遇神投...</a></li>
- <li><span>01 / 12</span><a href="zbwh/132833/135097/index.html" onclick="void(0)" target="_blank" title="“我们不放过任何一首好诗”—— 第二届“诗词中国”传统诗词创作大赛启动复活机制">“我们不放过任何一首好诗”—— ...</a></li>
- <li><span>01 / 12</span><a href="zbwh/132833/135094/index.html" onclick="void(0)" target="_blank" title="第二届“诗词中国”传统诗词创作大赛启动仪式">第二届“诗词中国”传统诗词创作大...</a></li>
- <li><span>01 / 12</span><a href="zbwh/132833/135091/index.html" onclick="void(0)" target="_blank" title="第二届“诗词中国”传统诗词创作大赛新闻通气会">第二届“诗词中国”传统诗词创作大...</a></li> 
+ <jtbc $function="transfer" $parameter="genre=relation_resource;type=new;limit=5">
+            
+    <li><span>{$=formatDate("{$time}", 23)}</span><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
+          </jtbc>  
 </ul> 
  </div> 
 </div>     </div> 
@@ -274,7 +273,7 @@ $(".sp02").show()
    <!--国学交流--> 
    <div class="news_list w614 f_r"> 
     <div class="title_1"> 
-     <span>国学交流</span> 
+     <span>{$=take('global.guoxue:index.title', 'lng')}</span> 
      <a class="more1" href="zbwh/132885/index.html">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="gxjl" runat="server" name="国学交流" class=" column">
@@ -320,8 +319,10 @@ $(".sp03").show()
 
 
 <ul class="list2 f_l"> 
- <li><a href="zbwh/132885/135187/index.html" onclick="void(0)" target="_blank" title="国学爱好者平台加入渠道">国学爱好者平台加入渠道</a></li>
- <li><a href="zbwh/132885/135184/index.html" onclick="void(0)" target="_blank" title="中国出版集团与“中国国学中心”签署联手推广国学备忘录">中国出版集团与“中国国学中心”...</a></li> 
+ <jtbc $function="transfer" $parameter="genre=guoxue;type=new;limit=5">
+            
+    <li><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
+          </jtbc>  
 </ul> 
  </div> 
 </div>     </div> 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[title]]></name>
+      <zh-cn><![CDATA[大事记]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[content]]></name>
+      <zh-cn><![CDATA[<p>　中版文化传播（北京）有限公司（简称&ldquo;中版文化&rdquo;）成立于2014年10月23日，是中国出版集团旗下的一支生力军。</p>
+
+<p>　　&ldquo;中版文化&rdquo;是中国出版传媒股份有限公司的控股子公司，副局级单位，注册资本2000万元，是中版集团中一家经营综合性全媒体文化传播业务的企业。中版文化定位于策划执行集团大型文化活动，以大众国学传播为核心，创建新兴媒体及衍生产品的产业链，为集团品牌建设和创新商业模式作出贡献。公司目前运作的第二届&ldquo;诗词中国&rdquo;传统诗词创作大赛及系列活动，以其&ldquo;高规格、大规模、全国性&rdquo;的活动定位，获得了巨大的社会反响，得到了中央领导的高度赞扬。</p>
+
+<p>　　未来，中版文化将继续致力于中华优秀传统文化的普及和传播，业务范围涵盖基于移动互联网的自媒体出版、地面文化活动、图书出版及销售、培训等。依托集团的丰厚资源和强大的影响力，中版文化将着力把内容优势与现代科技手段、传播手段相结合，最终打造中国最大的国学爱好者圈子，将中华优秀传统文化的推广、当代人文精神的引导，以及文化产业的价值创造进行有机的结合。</p>
+]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[att]]></name>
+      <zh-cn><![CDATA[]]></zh-cn>
+    </item>
+  </item_list>
+</xml>
