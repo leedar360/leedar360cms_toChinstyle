@@ -184,11 +184,12 @@
         <!--导航-->
         <div class="nav f_r">
           <ul>
-              <li><span><a href="zbwh/index/index.html">网站首页</a></span></li>
-                <li><span><a href="zbwh/132864/index.html">关于我们</a></span>
+              <li><span><a href="{$=getActualRoute('./')}">网站首页</a></span></li>
+                <li><span><a href="{$=getActualRoute('./')}">关于我们</a></span>
                   <div class="erji_nav">
                         <img src="{$=$global.assetspath}/images/header/nav_bg1.png">
-                        <p><a href="zbwh/132864/index.html">公司简介</a><a href="zbwh/132868/index.html">大事记</a></p>
+                        <p><a href="{$=getActualRoute('./')}">{$=take('.public.menu-2', 'lng')}</a>
+                          <a href="z{$=getActualRoute('./')}">{$=take('.public.menu-6', 'lng')}</a></p>
                         <img src="{$=$global.assetspath}/images/header/nav_bg2.png">
                     </div>
                 </li>
