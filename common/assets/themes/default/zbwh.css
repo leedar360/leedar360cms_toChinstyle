@@ -1,3 +1,4 @@
+
 body,div,p,h1,h2,h3,h4,h5,h6,ul,li,dl,dd,dt,ol,img,table{ padding:0; margin:0; border:none; font-family:微软雅黑;}
 h1,h2,h3,h4,h5,h6{ font-weight:normal;}
 table{ border-collapse:collapse;}
@@ -8,11 +9,11 @@ ul,dl,li,dd,dt,ol{ list-style:none;}
 input,select,img{vertical-align:middle; outline:none;}
 .f_l{ float:left; display:inline;}
 .f_r{ float:right; display:inline;}
-body{ font-size:14px; font-family:微软雅黑; color:#616161; background:url(../../zbwh/uiFramework/images/zbwh_img/bg.jpg); min-width:1000px;}
+body{ font-size:14px; font-family:微软雅黑; color:#616161; background:url(../../images/header/bg.jpg); min-width:1000px;}
 
 
 /*头部*/
-#header{ width:100%; height:186px; background:url(../../zbwh/uiFramework/images/zbwh_img/top_bg.png) no-repeat right top;}
+#header{ width:100%; height:186px; background:url(../../images/header/top_bg.png) no-repeat right top;}
 	.head{ width:1000px; height:186px; margin:0 auto; clear:both;}
 		.logo{ width:395px; height:171px; padding-top:15px;}
 		/*电话*/
@@ -20,9 +21,9 @@ body{ font-size:14px; font-family:微软雅黑; color:#616161; background:url(..
 		.tel span{ margin-left:14px;}
 		/*搜索*/
 		.search{ padding-top:37px; height:56px; width:600px;}
-			.search_1{ background:url(../../zbwh/uiFramework/images/zbwh_img/search_bg1.png) no-repeat; width:200px; height:29px; float:right;}
+			.search_1{ background:url(../../images/header/search_bg1.png) no-repeat; width:200px; height:29px; float:right;}
 				.input_1{ width:150px; height:26px; line-height:26px; border:none; margin-left:12px; background:none; color:#c2c2c2; font-size:13px;font-family:微软雅黑;}
-				.input_2{ background:url(../../zbwh/uiFramework/images/zbwh_img/search_bg2.png) no-repeat left center; width:30px; height:26px; border:none; cursor:pointer;}
+				.input_2{ background:url(../../images/header/search_bg2.png) no-repeat left center; width:30px; height:26px; border:none; cursor:pointer;}
 		/*导航*/
 		.nav{ width:576px; height:40px;}
 		.nav li{ float:left; display:inline; padding-left:28px; position:relative; width:68px; height:40px; z-index:10;}

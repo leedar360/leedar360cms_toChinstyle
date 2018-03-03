@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xml mode="jtbc" author="jetiben">
   <configure>
     <node>item</node>
@@ -7,8 +7,8 @@
   </configure>
   <item_list>
     <item>
-      <name><![CDATA[title]]></name>
-      <zh-cn><![CDATA[JTBC]]></zh-cn>
+      <name><![CDATA[mode]]></name>
+      <zh-cn><![CDATA[1]]></zh-cn>
     </item>
   </item_list>
 </xml>
