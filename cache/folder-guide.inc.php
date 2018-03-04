@@ -1,3 +1,3 @@
 <?php
-$GLOBALS['cache-folder-guide'] = array('0' => '1520097813','1' => 'console|+|console/cache|+|console/log|+|console/xml|+|console/file|+|console/account|+|console/role|+|universal|+|universal/material|+|universal/upload|+|universal/category|+|universal/link|+|aboutus|+|case|+|team|+|career|+|news|+|contactus|+|consult|+|hotact|+|media|+|shufa|+|shici|+|guoxue|+|relation_resource|+|about_us|+|big_event|+|',);
+$GLOBALS['cache-folder-guide'] = array('0' => '1520205368','1' => 'console|+|console/cache|+|console/log|+|console/xml|+|console/file|+|console/account|+|console/role|+|universal|+|universal/material|+|universal/upload|+|universal/category|+|universal/link|+|aboutus|+|case|+|team|+|career|+|news|+|contactus|+|consult|+|hotact|+|media|+|relation_resource|+|about_us|+|big_event|+|dongtaibobao|+|',);
 ?>

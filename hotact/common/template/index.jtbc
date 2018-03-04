@@ -8,30 +8,108 @@
   <item_list>
     <item>
       <name><![CDATA[list]]></name>
-      <default><![CDATA[{$=take('.public.header')}
-  <div class="container">
-    <div class="cupboard clear_float">
-      <div class="side">
-        <dl class="option clear_float">
+      <default><![CDATA[{$=take('.public.chinastyle_detail_header')}
+        <script type="text/javascript" src="{$=$global.assetspath}/js/chanelCounting.js"></script>
+  <!--内容--> 
+  <div class="main"> 
+   <!--左侧--> 
+   <div class="left f_l column" id="left_nav" name="左侧导航" runat="server">
+      <div class="portlet" id="53968bfca3c1455fb4abc5085066e6bd"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenu53968bfca3c1455fb4abc5085066e6bd" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   <ul class="left_menu">
+              <dl class="option clear_float">
           <dt>{$=take('index.category', 'lng')}</dt>{$=transfer('genre=universal/category;type=@order;baseurl=./;tpl=dd-list', array('fid' => 0, 'genre' => '{$>genre}'))}
         </dl>
-      </div>
-      <div class="main">
-        <div class="list">
-          <h1>{$=take('index.title', 'lng')}</h1>
-          <ul>{@}
+      </ul>
+ 
+ </div> 
+</div>    </div> 
+   <!--右侧--> 
+   <div class="right f_r column" id="right_con" name="右侧内容" runat="server">
+      <div class="portlet" id="b678e9930e774db8ac8df852ffbe82d0"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenub678e9930e774db8ac8df852ffbe82d0" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<div class="title_2">
+  {$=take('index.title', 'lng')}
+</div> 
+<div class="right_con"> 
+ <ul class="right_list" style="HEIGHT:480PX;"> 
+  {@}
             <li><a href="{$=htmlEncode($createURL('detail', '{$id}'))}">{$topic}</a><span class="time">{$=formatDate('{$time}', '1')}</span></li>{@}
-          </ul>
-        </div>
-        <div class="pagi">{$=pagi('{$-pagi-pagenum}', '{$-pagi-pagetotal}', $createURL('list', '{$-category}', array('page' => '[~page]')), 'pagi-2')}</div>
-      </div>
-    </div>
-  </div>
-{$=take('.public.footer')}]]></default>
+ </ul> 
+ <div class="fenye"> 
+  {$=pagi('{$-pagi-pagenum}', '{$-pagi-pagetotal}', $createURL('list', '{$-category}', array('page' => '[~page]')), 'pagi-2')}
+ </div> 
+ <input type="hidden" name="article_paging_list_hidden" moduleid="b678e9930e774db8ac8df852ffbe82d0" modulekey="132877b678e9930e774db8ac8df852ffbe82d0" totalpage="2" /> 
+</div> 
+ </div> 
+</div>    </div> 
+   <div class="clear"></div> 
+  </div> 
+  <!--end 内容--> 
+
+{$=take('.public.chinastyle_footer')}]]></default>
     </item>
     <item>
       <name><![CDATA[detail]]></name>
-      <default><![CDATA[{$=take('.public.header')}
+      <default><![CDATA[{$=take('.public.chinastyle_detail_header')}
+<!--内容--> 
+  <div class="main column" id="main1" name="内容" runat="server">
+     <div class="portlet" id="9a2895f3c39e4b39a4846a144d73e170"> 
+ <div align="left" class="portlet-header"> 
+  <span id="menu">
+        </span> 
+  <div id="submenu9a2895f3c39e4b39a4846a144d73e170" class="shadow dn"> 
+   <ul class="float_list_ul">
+        </ul> 
+  </div> 
+ </div> 
+ <div>
+   
+
+
+<div class="weizhi">
+  当前位置： 
+ <span><a class="SkinObject" href="{$topic}" target="_parent">网站首页</a>&nbsp;&gt;&nbsp;<a class="SkinObject" href="../../../zbwh/132877/index.html" target="_parent">热点活动</a>&nbsp;&gt;&nbsp;<a class="SkinObject" href="../../../zbwh/132877/index.html" target="_parent">诗词中国</a></span> 
+</div> 
+<div class="pre"> 
+ <div class="title_2">
+   {$topic}
+  <p></p> 
+ </div> 
+ <div class="pre_time"> 
+  <span>来源：系统管理员</span> 
+  <span>时间：{$=formatDate("{$time}", 1)}</span> 
+ </div> 
+ <div class="right_con"> 
+  {$=encodeText(#content)}
+ </div> 
+</div><input type='hidden' id='articleKey' value=142358><script type=text/javascript src='../../../zbwh/uiFramework/js/counting/articleCounting.js'></script><script type=text/javascript src='../../../zbwh/uiFramework/js/counting/articleCountingByRate.js'></script> 
+ </div> 
+</div>   </div> 
+  <!--end 内容--> 
+
+
+
+
   <div class="container">
     <div class="cupboard clear_float">
       <div class="side">
@@ -47,7 +125,7 @@
       </div>
     </div>
   </div>
-{$=take('.public.footer')}]]></default>
+{$=take('.public.chinastyle_footer')}]]></default>
     </item>
   </item_list>
 </xml>

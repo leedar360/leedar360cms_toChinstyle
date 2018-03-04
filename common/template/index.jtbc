@@ -63,7 +63,7 @@
    <!--动态播报--> 
    <div class="news_list w364 f_l"> 
     <div class="title_1"> 
-     <span>{$=take('global.hotact:index.title', 'lng')}</span> 
+     <span>{$=take('global.dongtaibobao:index.title', 'lng')}</span> 
      <a class="more1" href="zbwh/132821/index.html">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="dtbb" runat="server" name="动态播报" class=" column">
@@ -78,7 +78,7 @@
  </div> 
  <div>
    <ul class="list1"> 
- <jtbc $function="transfer" $parameter="genre=hotact;type=new;limit=5">
+ <jtbc $function="transfer" $parameter="genre=dongtaibobao;type=new;limit=5">
             
     <li><span>{$=formatDate("{$time}", 23)}</span><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
           </jtbc>  
@@ -90,7 +90,7 @@
    <!--书法中国专区--> 
    <div class="news_list w614 f_r"> 
     <div class="title_1"> 
-     <span>{$=take('global.shufa:index.title', 'lng')}</span> 
+     <span>{$=take('global.hotact:index.shufa_title', 'lng')}</span> 
      <em><img src="zbwh/template/page/index/sfzgizimg.jpg" /></em> 
      <a class="more1" href="zbwh/132881/index.html">更多+</a> 
     </div> 
@@ -138,7 +138,7 @@ $(".sp0").show()
 
 <ul class="list2 f_l"> 
   
-   <jtbc $function="transfer" $parameter="genre=shufa;type=new;limit=5">
+   <jtbc $function="transfer" $parameter="genre=hotact;category=10;type=new;limit=5">
             
     <li><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
           </jtbc>  
@@ -183,7 +183,7 @@ $(".sp0").show()
    <!--诗词中国专区--> 
    <div class="news_list w614 f_r"> 
     <div class="title_1"> 
-     <span>{$=take('global.shici:index.title', 'lng')}</span> 
+     <span>{$=take('global.hotact:index.shici_title', 'lng')}</span> 
      <em><img src="zbwh/template/page/index/img_sfzc.png" /></em> 
      <a class="more1" href="zbwh/132877/index.html">更多+</a> 
     </div> 
@@ -202,7 +202,7 @@ $(".sp0").show()
 
 
 <ul class="list2 f_l"> 
- <jtbc $function="transfer" $parameter="genre=shici;type=new;limit=5">
+ <jtbc $function="transfer" $parameter="genre=hotact;type=new;category=11;limit=5">
             
     <li><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
           </jtbc>  
@@ -273,7 +273,7 @@ $(".sp02").show()
    <!--国学交流--> 
    <div class="news_list w614 f_r"> 
     <div class="title_1"> 
-     <span>{$=take('global.guoxue:index.title', 'lng')}</span> 
+     <span>{$=take('global.hotact:index.guoxue_title', 'lng')}</span> 
      <a class="more1" href="zbwh/132885/index.html">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="gxjl" runat="server" name="国学交流" class=" column">
@@ -319,7 +319,7 @@ $(".sp03").show()
 
 
 <ul class="list2 f_l"> 
- <jtbc $function="transfer" $parameter="genre=guoxue;type=new;limit=5">
+ <jtbc $function="transfer" $parameter="genre=hotact;category=9;type=new;limit=5">
             
     <li><a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}" onclick="void(0)" target="_blank" title="{$topic}" style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap; width: 250px;">{$topic}</a></li>
           </jtbc>  

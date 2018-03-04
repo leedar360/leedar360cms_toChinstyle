@@ -8,11 +8,23 @@
   <item_list>
     <item>
       <name><![CDATA[title]]></name>
-      <zh-cn><![CDATA[动态播报]]></zh-cn>
+      <zh-cn><![CDATA[热点活动]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[shici_title]]></name>
+      <zh-cn><![CDATA[诗词中国专区]]></zh-cn>
+    </item>
+     <item>
+      <name><![CDATA[shufa_title]]></name>
+      <zh-cn><![CDATA[书法中国专区]]></zh-cn>
+    </item>
+     <item>
+      <name><![CDATA[guoxue_title]]></name>
+      <zh-cn><![CDATA[国学交流]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[category]]></name>
-      <zh-cn><![CDATA[动态播报]]></zh-cn>
+      <zh-cn><![CDATA[热点活动]]></zh-cn>
     </item>
   </item_list>
 </xml>

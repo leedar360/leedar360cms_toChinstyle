@@ -30,6 +30,24 @@
 {$=take('.public.footer')}]]></default>
     </item>
     <item>
+      <name><![CDATA[no-category-list]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="container">
+    <div class="cupboard clear_float">
+      <div class="main">
+        <div class="list">
+          <h1>{$=take('index.title', 'lng')}</h1>
+          <ul>{@}
+            <li><a href="{$=htmlEncode($createURL('detail', '{$id}'))}">{$topic}</a><span class="time">{$=formatDate('{$time}', '1')}</span></li>{@}
+          </ul>
+        </div>
+        <div class="pagi">{$=pagi('{$-pagi-pagenum}', '{$-pagi-pagetotal}', $createURL('list', '{$-category}', array('page' => '[~page]')), 'pagi-2')}</div>
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+    <item>
       <name><![CDATA[detail]]></name>
       <default><![CDATA[{$=take('.public.header')}
   <div class="container">

@@ -1,0 +1,31 @@
+/*bannerå›¾*/
+.banner{ width:100%; height:auto;}
+	.ej_banner{ width:100%; height:205px;}
+	
+/*å†…å®¹*/
+.main{  width:1000px; margin:0 auto; clear:both; padding:22px 0 28px;}
+	.w364{ width:364px;}
+	.w614{ width:614px;}
+	
+
+
+.left{ width:160px; height:auto; padding-top:10px;}
+	.left_menu{ width:100%; height:auto;}
+	.left_menu li{ line-height:49px; border-bottom:1px solid #cdcdcd; padding-left:38px;}
+	.left_menu li a{ font-size:21px; color:#444444;}
+	.left_menu li a:hover,.left_menu .left_menu_1 a{ color:#c90000;}
+.right{ width:775px; border-top:3px solid #c90000; border-right:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; padding:27px 20px; background:#fff;}
+	.title_2{ padding:0px 0 22px; font-size:21px; color:#444444; font-weight:bold;}
+	.right_con{ width:100%; height:auto;}
+	.right_con p{ line-height:36px;}
+	.right_list{ padding:0 10px; clear:both; height:auto;}
+	.right_list li{ line-height:32px; height:32px; overflow:hidden; cursor:pointer;}
+	.right_list li a,.right_list li span{ display:block;}
+	.right_list li a{ float:left; background:url(icon_dian.jpg) no-repeat left center; padding-left:13px; color:#616161; font-size:14px;}
+	.right_list li span{ float:right;color:#616161; font-size:14px;}
+	.right_list li a:hover,.right_list li:hover a{ background:url(icon_dianh.jpg) no-repeat left center; color:#c90000}
+	.right_list li:hover span{ color:#c90000}
+	/*åˆ†é¡µ*/
+	.fenye{ height:36px; clear:both; padding:20px 0 20px 230px; position:relative; z-index:1;}
+	.fenye li{ display:inline; float:left; padding-left:10px;}
+	.fenye li a,.fenye li font{ display:block; line-height:34px; padding:0 14px; border:1px solid #e2e2e2; word-wrap:normal; white-space:nowrap;}
