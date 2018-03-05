@@ -68,9 +68,9 @@
         </ul>
         <ul class="foot_nav f_l" style="width:237px;">
         	<li class="foot_nav_1">我们的品牌</li>
-            <li><a href="zbwh/132877/index.html">诗词中国</a></li>
-            <li><a href="zbwh/132881/index.html">书法中国</a></li>
-            <li><a href="zbwh/132885/index.html">国学交流</a></li>
+            <li><a href="{$=getActualRoute('hotact')}?type=list&category=11">诗词中国</a></li>
+            <li><a href="{$=getActualRoute('hotact')}?type=list&category=10">书法中国</a></li>
+            <li><a href="{$=getActualRoute('hotact')}?type=list&category=9">国学交流</a></li>
         </ul>
         <div class="foot_ewm f_l"><img src="{$=$global.assetspath}/images/footer/erweima.jpg"><br><img src="{$=$global.assetspath}/themes/{$=THEME}/icon/footer/sys.png" style="margin-top:10px;"></div>
         <div class="foot_dz f_l">
@@ -188,8 +188,8 @@
                 <li><span><a href="{$=getActualRoute('./')}">{$=take('.public.menu-2', 'lng')}</a></span>
                   <div class="erji_nav">
                         <img src="{$=$global.assetspath}/images/header/nav_bg1.png">
-                        <p><a href="{$=getActualRoute('about_us')}">{$=take('.public.menu-2', 'lng')}</a>
-                          <a href="z{$=getActualRoute('./')}">{$=take('.public.menu-6', 'lng')}</a></p>
+                        <p><a href="{$=getActualRoute('about_us')}">{$=take('.public.menu-9', 'lng')}</a>
+                          <a href="{$=getActualRoute('big_event')}">{$=take('.public.menu-10', 'lng')}</a></p>
                         <img src="{$=$global.assetspath}/images/header/nav_bg2.png">
                     </div>
                 </li>

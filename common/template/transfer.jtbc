@@ -22,5 +22,13 @@
       <name><![CDATA[dd-list]]></name>
       <default><![CDATA[{@}<dd name="dd{$id}"><a href="{$-baseurl}{$=htmlEncode($createURL('list', '{$id}', null, '{$-genre}'))}">{$topic}</a></dd>{@}]]></default>
     </item>
+    <item>
+      <name><![CDATA[category-list]]></name>
+      <default><![CDATA[{@}
+	<li class="left_menu_1">
+      <dd name="dd{$id}"><a href="{$-baseurl}{$=htmlEncode($createURL('list', '{$id}', null, '{$-genre}'))}">{$topic}</a></dd>
+   </li>
+{@}]]></default>
+    </item>
   </item_list>
 </xml>

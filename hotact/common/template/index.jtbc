@@ -26,7 +26,7 @@
  <div>
    <ul class="left_menu">
               <dl class="option clear_float">
-          <dt>{$=take('index.category', 'lng')}</dt>{$=transfer('genre=universal/category;type=@order;baseurl=./;tpl=dd-list', array('fid' => 0, 'genre' => '{$>genre}'))}
+          {$=transfer('genre=universal/category;type=@order;baseurl=./;tpl=category-list', array('fid' => 0, 'genre' => '{$>genre}'))}
         </dl>
       </ul>
  
