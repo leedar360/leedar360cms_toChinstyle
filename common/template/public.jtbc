@@ -54,7 +54,6 @@
 </body>
 </html>]]></default>
     </item>
-    
     <item>
       <name><![CDATA[chinastyle_footer]]></name>
       <default><![CDATA[  <div id="footer">
@@ -108,8 +107,8 @@
 
 <div class="sc_img" id="slideContainer"> 
  <ul class="slideshow" id="slidesImgs"> 
-  <li style="background:url(zbwh/resource/cms/2015/12/2015120216312755635.jpg) no-repeat center top;"><a href="javascript:;"></a></li>
-  <li style="background:url(zbwh/resource/cms/2015/12/2015120216312755635.jpg) no-repeat center top;"><a href="javascript:;"></a></li> 
+  <li style="background:url{$=$global.assetspath}/images/banner/banner.jpg) no-repeat center top;"><a href="javascript:;"></a></li>
+  <li style="background:url($=$global.assetspath}/images/banner/banner.jpg) no-repeat center top;"><a href="javascript:;"></a></li> 
  </ul> 
  <div class="slidebar" id="slideBar"> 
   <ul> 
@@ -146,18 +145,19 @@
   <meta  name="页面生成时间" content="2017-07-21 03:56:02" />
 <meta name="keywords" content="  " />
 <meta name="description" content=" 中版文化默认频道  " />
-<link rel="stylesheet" type="text/css" media="screen" href="zbwh/uiFramework/huilan-jquery-ui/css/huilan-jquery-ui.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="{$=$global.assetspath}/themes/{$=THEME}/huilan-jquery-ui.css" />
 <script type="text/javascript" src="{$=$global.assetspath}/js/huilan-jquery-ui.js?self=true&skin=default"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/zbwh.js"></script>   
 <script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.frontend.js"></script>
 <link type="text/css" rel="stylesheet" href="{$=$global.assetspath}/themes/{$=THEME}/zbwh.css" />
-   
+<link rel="stylesheet" type="text/css" media="screen" href="{$=$global.assetspath}/themes/{$=THEME}/skin.css" /> 
+<script type="text/javascript" src="{$=$global.assetspath}/js/slideshow.js"></script>  
  </head>
  <body>
-  <link rel="stylesheet" type="text/css" media="screen" href="{$=$global.assetspath}/themes/{$=THEME}/skin.css" /> 
-  <script type="text/javascript" src="{$=$global.assetspath}/js/slideshow.js"></script><div style="display:none" easysite="easysiteHiddenDiv">
+
+   <div style="display:none" easysite="easysiteHiddenDiv">
 </div><style>
 #header{background-size: 60% auto;}
 </style>
@@ -185,28 +185,39 @@
         <div class="nav f_r">
           <ul>
               <li><span><a href="{$=getActualRoute('./')}">网站首页</a></span></li>
-                <li><span><a href="{$=getActualRoute('./')}">关于我们</a></span>
+                <li><span><a href="{$=getActualRoute('./')}">{$=take('.public.menu-2', 'lng')}</a></span>
                   <div class="erji_nav">
                         <img src="{$=$global.assetspath}/images/header/nav_bg1.png">
-                        <p><a href="{$=getActualRoute('./')}">{$=take('.public.menu-2', 'lng')}</a>
+                        <p><a href="{$=getActualRoute('about_us')}">{$=take('.public.menu-2', 'lng')}</a>
                           <a href="z{$=getActualRoute('./')}">{$=take('.public.menu-6', 'lng')}</a></p>
                         <img src="{$=$global.assetspath}/images/header/nav_bg2.png">
                     </div>
                 </li>
-                <li><span><a href="zbwh/132821/index.html">动态播报</a></span></li>
-                <li><span><a href="zbwh/132825/index.html">媒体视角</a></span></li>
-                <li><span><a href="zbwh/132877/index.html">热点活动</a></span>
+                <li><span><a href="{$=getActualRoute('dongtaibobao')}">{$=take('.public.menu-3', 'lng')}</a></span></li>
+                <li><span><a href="{$=getActualRoute('media')}">媒体视角</a></span></li>
+                <li><span><a href="{$=getActualRoute('hotact')}">热点活动</a></span>
                   <div class="erji_nav">
                         <img src="{$=$global.assetspath}/images/header/nav_bg1.png">
-                        <p><a href="zbwh/132877/index.html">诗词中国</a><a href="zbwh/132881/index.html">书法中国</a><a href="zbwh/132885/index.html">国学交流</a></p>
+                        <p><a href="{$=getActualRoute('hotact')}?type=list&category=11">诗词中国</a>
+                          <a href="{$=getActualRoute('hotact')}?type=list&category=10">书法中国</a>
+                          <a href="{$=getActualRoute('hotact')}?type=list&category=9">国学交流</a></p>
                         <img src="{$=$global.assetspath}/images/header/nav_bg2.png">
                     </div>
                 </li>
-                <li><span><a href="zbwh/132849/index.html">联系我们</a></span></li>
+                <li><span><a href="{$=getActualRoute('contactus')}">联系我们</a></span></li>
             </ul>
         </div>
     </div>
 </div>  <!--end 头部--> <p></p>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[chinastyle_detail_header]]></name>
+      <default><![CDATA[{$=take('.public.chinastyle_header')}
+  <!--banner--> 
+  <div class="banner"> 
+<div class="ej_banner" style="background:url({$=$global.assetspath}/images/banner/banner.jpg) no-repeat center bottom;"></div> 
+  </div> 
+  <!--end banner--> ]]></default>
     </item>
   </item_list>
 </xml>

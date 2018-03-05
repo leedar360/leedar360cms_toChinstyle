@@ -42,7 +42,7 @@ class ui extends page {
     $db = self::db();
     if (!is_null($db))
     {
-      $tmpstr = tpl::take('index.no-category-list', 'tpl');
+      $tmpstr = tpl::take('index.list', 'tpl');
       $tpl = new tpl();
       $tpl -> tplString = $tmpstr;
       $loopString = $tpl -> getLoopString('{@}');
