@@ -24,9 +24,11 @@
         <div>
           <ul class="left_menu">
             <li class="left_menu_1">
-              <a href="{$=getActualRoute('about_us')}"">{$=take('.public.menu-2', 'lng')}</a>
+              <a href="{$=getActualRoute('about_us')}"">{$=take('.public.menu-9', 'lng')}</a>
             </li>
-            <li><a href="../../zbwh/132868/index.html">大事记</a></li>
+            <li>
+              <a href="{$=getActualRoute('big_event')}">{$=take('.public.menu-10', 'lng')}</a>
+            </li>
           </ul>
         </div> 
       </div>

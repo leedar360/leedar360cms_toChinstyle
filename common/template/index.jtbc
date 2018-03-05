@@ -64,7 +64,7 @@
    <div class="news_list w364 f_l"> 
     <div class="title_1"> 
      <span>{$=take('global.dongtaibobao:index.title', 'lng')}</span> 
-     <a class="more1" href="zbwh/132821/index.html">更多+</a> 
+     <a class="more1" href="{$=getActualRoute('dongtaibobao')}">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="dtbb" runat="server" name="动态播报" class=" column">
        <div class="portlet" id="8ae19fceaad8466ba26f3229847cbd4d"> 
@@ -91,10 +91,10 @@
    <div class="news_list w614 f_r"> 
     <div class="title_1"> 
      <span>{$=take('global.hotact:index.shufa_title', 'lng')}</span> 
-     <em><img src="zbwh/template/page/index/sfzgizimg.jpg" /></em> 
-     <a class="more1" href="zbwh/132881/index.html">更多+</a> 
+     <em><img src="{$=$global.assetspath}/images/index/sfzgizimg.jpg" /></em> 
+     <a class="more1" href="{$=getActualRoute('hotact')}?type=list&category=10">更多+</a> 
     </div> 
-    <div style="HEIGHT: 160px" id="sfzgzq" runat="server" name="书法中国专区" class=" column">
+    <div style="HEIGHT: 160px" id="sfzgzq" runat="server" name="{$=take('global.hotact:index.shufa_title', 'lng')}" class=" column">
        <div class="portlet" id="d7b534abd89a4497b7068f57662aea3b"> 
  <div align="left" class="portlet-header"> 
   <span id="menu">
@@ -153,7 +153,7 @@ $(".sp0").show()
    <div class="news_list w364 f_l"> 
     <div class="title_1"> 
      <span>{$=take('global.media:index.title', 'lng')}</span> 
-     <a class="more1" href="zbwh/132825/index.html">更多+</a> 
+     <a class="more1" href="{$=getActualRoute('media')}">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="mtsj" runat="server" name="媒体视角" class=" column">
        <div class="portlet" id="5f8cade761194fc4be0f0e70a318cf9a"> 
@@ -184,8 +184,8 @@ $(".sp0").show()
    <div class="news_list w614 f_r"> 
     <div class="title_1"> 
      <span>{$=take('global.hotact:index.shici_title', 'lng')}</span> 
-     <em><img src="zbwh/template/page/index/img_sfzc.png" /></em> 
-     <a class="more1" href="zbwh/132877/index.html">更多+</a> 
+     <em><img src="{$=$global.assetspath}/images/index/img_sfzc.png" /></em> 
+     <a class="more1" href="{$=getActualRoute('hotact')}?type=list&category=11">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="sczgzq" runat="server" name="诗词中国专区" class=" column">
        <div class="portlet" id="626a8d015cea4abfaec8b62338fcb0b1"> 
@@ -245,7 +245,7 @@ $(".sp02").show()
    <div class="news_list w364 f_l"> 
     <div class="title_1"> 
      <span>{$=take('global.relation_resource:index.title', 'lng')}</span> 
-     <a class="more1" href="zbwh/132833/index.html">更多+</a> 
+     <a class="more1" href="{$=getActualRoute('relation_resource')}">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="xgzy" runat="server" name="相关资源" class=" column">
        <div class="portlet" id="a01e20fd902849f981d42d039248b8e4"> 
@@ -274,7 +274,7 @@ $(".sp02").show()
    <div class="news_list w614 f_r"> 
     <div class="title_1"> 
      <span>{$=take('global.hotact:index.guoxue_title', 'lng')}</span> 
-     <a class="more1" href="zbwh/132885/index.html">更多+</a> 
+     <a class="more1" href="{$=getActualRoute('hotact')}?type=list&category=9">更多+</a> 
     </div> 
     <div style="HEIGHT: 160px" id="gxjl" runat="server" name="国学交流" class=" column">
        <div class="portlet" id="7aaebf66826644cda35ad815cd1b6dfb"> 

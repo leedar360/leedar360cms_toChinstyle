@@ -27,12 +27,12 @@
 		.list_img{ padding-left:25px; width:287px; height:155px; padding-top:5px;}
 		.list2{ padding-left:25px; *padding-left:0px;}
 		.list2 li{ height:32px; overflow:hidden;}
-		.list2 li a{ display:block; line-height:32px; background:url(icon_dian.jpg) no-repeat left center; padding-left:16px; overflow:hidden;}
-		.list2 li a:hover{ background:url(icon_dianh.jpg) no-repeat left center;}
+		.list2 li a{ display:block; line-height:32px; background:url(../../images/index/icon_dian.jpg) no-repeat left center; padding-left:16px; overflow:hidden;}
+		.list2 li a:hover{ background:url(../../images/index/icon_dianh.jpg) no-repeat left center;}
 		/*产品中心*/
 		.w999{ width:999px; clear:both;}
 			.cpzx_list{ padding:12px 0 8px 0; clear:both; height:49px;}
-			.cpzx_list li{ width:141px; height:49px; float:left; display:inline; background:url(link_bg.jpg) no-repeat; margin-left:22px; line-height:49px; text-align:center; position:relative;}
+			.cpzx_list li{ width:141px; height:49px; float:left; display:inline; background:url(../../images/index/link_bg.jpg) no-repeat; margin-left:22px; line-height:49px; text-align:center; position:relative;}
 			.cpzx_list li a{ color:#8f8f8f; font-size:14px; font-weight:bold;}
 			.cpzx_list li a:hover{ color:#e54a4a;}
 				.cp_ewm{ width:100px; height:100px; position:absolute; left:15px; top:-110px; padding:5px; background:#fff; display:none;}

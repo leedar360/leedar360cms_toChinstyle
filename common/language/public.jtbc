@@ -39,6 +39,15 @@
       <zh-cn><![CDATA[留言咨询]]></zh-cn>
     </item>
     <item>
+      <name><![CDATA[menu-9]]></name>
+      <zh-cn><![CDATA[公司简介]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[menu-10]]></name>
+      <zh-cn><![CDATA[大事记]]></zh-cn>
+    </item>
+
+    <item>
       <name><![CDATA[keywords]]></name>
       <zh-cn><![CDATA[JTBC,CMS,网站管理系统,网站内容管理系统]]></zh-cn>
     </item>
