@@ -29,8 +29,8 @@
 
 <div class="sc_img" id="slideContainer"> 
  <ul class="slideshow" id="slidesImgs"> 
-  <li style="background:url({$=$global.assetspath}/images/banner/2015120216312755635.jpg) no-repeat center top;"><a href="javascript:;"></a></li>
-  <li style="background:url({$=$global.assetspath}/images/banner/2015120216312755635.jpg) no-repeat center top;"><a href="javascript:;"></a></li> 
+  <li style="background:url({$=$global.assetspath}/images/banner/banner.jpg) no-repeat center top;"><a href="javascript:;"></a></li>
+  <li style="background:url({$=$global.assetspath}/images/banner/banner.jpg) no-repeat center top;"><a href="javascript:;"></a></li> 
  </ul> 
  <div class="slidebar" id="slideBar"> 
   <ul> 
@@ -335,20 +335,20 @@ $(".sp03").show()
      <span>产品中心</span> 
     </div> 
     <ul class="cpzx_list"> 
-     <li><a href="/www.zhsc.net/" target="_blank">中华诗词网</a></li> 
-     <li><a href="/bbs.zhsc.net/" target="_blank">中华诗词论坛</a></li> 
+     <li><a href="www.zhsc.net/" target="_blank">中华诗词网</a></li> 
+     <li><a href="bbs.zhsc.net/" target="_blank">中华诗词论坛</a></li> 
      <li><a href="javascript:;">诗词中国客户端</a> 
       <div style="WIDTH: 205px; TOP: -130px; LEFT: -40px" class="cp_ewm"> 
-       <p>安卓版客户端<br /><img src="zbwh/template/page/index/sczg_az.png" /></p> 
-       <p style="PADDING-LEFT: 5px">苹果版客户端<br /><img src="zbwh/template/page/index/sczg_pg.png" /></p> 
+       <p>安卓版客户端<br /><img src="{$=$global.assetspath}/images/index/sczg_az.png" /></p> 
+       <p style="PADDING-LEFT: 5px">苹果版客户端<br /><img src="{$=$global.assetspath}/images/index/sczg_pg.png" /></p> 
       </div></li> 
      <li><a href="javascript:;">诗词中国微信</a> 
       <div class="cp_ewm"> 
-       <img src="zbwh/template/page/index/sczgzwh.jpg" /> 
+       <img src="{$=$global.assetspath}/images/index/sczgzwh.jpg" /> 
       </div></li> 
      <li><a href="javascript:;">书法中国微信</a> 
       <div class="cp_ewm"> 
-       <img src="zbwh/template/page/index/sfzg.jpg" /> 
+       <img src="{$=$global.assetspath}/images/index/sfzg.jpg" /> 
       </div></li> 
      <li><a href="javascript:;">文创产品</a></li> 
     </ul> 

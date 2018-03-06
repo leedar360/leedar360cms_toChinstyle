@@ -72,7 +72,7 @@
             <li><a href="{$=getActualRoute('hotact')}?type=list&category=10">书法中国</a></li>
             <li><a href="{$=getActualRoute('hotact')}?type=list&category=9">国学交流</a></li>
         </ul>
-        <div class="foot_ewm f_l"><img src="{$=$global.assetspath}/images/footer/erweima.jpg"><br><img src="{$=$global.assetspath}/themes/{$=THEME}/icon/footer/sys.png" style="margin-top:10px;"></div>
+        <div class="foot_ewm f_l"><img src="{$=$global.assetspath}/images/footer/erweima.jpg"><br><img src="{$=$global.assetspath}/images/footer/sys.png" style="margin-top:10px;"></div>
         <div class="foot_dz f_l">
         	<!--<p><span>宣传语　 :</span>中版文化传播（北京）有限公司</p>-->
             <p><span>联系电话 :</span><b>+86(10)63261072</b></p>
@@ -84,6 +84,9 @@
     </div>
 	<div class="bq">版权所有 : 中版文化传播（北京）有限公司</div>
 </div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='{$=$global.assetspath}/js/share.js?v=89860593.js];
+</script>
 <script type="text/javascript">$(document).ready(function() { jtbc.frontend.ready(); });</script>
 </body>
 </html>]]></default>
@@ -146,7 +149,7 @@
 <meta name="keywords" content="  " />
 <meta name="description" content=" 中版文化默认频道  " />
 <link rel="stylesheet" type="text/css" media="screen" href="{$=$global.assetspath}/themes/{$=THEME}/huilan-jquery-ui.css" />
-<script type="text/javascript" src="{$=$global.assetspath}/js/huilan-jquery-ui.js?self=true&skin=default"></script>
+<script type="text/javascript" src="{$=$global.assetspath}/js/huilan-jquery-ui.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/zbwh.js"></script>   
@@ -166,7 +169,12 @@
       <!--logo-->
         <div class="logo f_l"><img src="{$=$global.assetspath}/images/header/logo.png" width="395" height="158"></div>
         <!--电话-->
-        <div class="tel f_r"><div class="bdsharebuttonbox" style="float:left; display:inline;"><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div><span>TEL : +86(10)63261072</span></div>
+        <div class="tel f_r">
+          <div class="bdsharebuttonbox bdshare-button-style0-16" style="float:left; display:inline;">
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+          </div>
+          <span>TEL : +86(10)63261072</span></div>
         <!--搜索-->
       <div class="search f_r">
    <div class="search_1">
@@ -219,5 +227,6 @@
   </div> 
   <!--end banner--> ]]></default>
     </item>
+    
   </item_list>
 </xml>
