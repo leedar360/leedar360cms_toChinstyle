@@ -51,7 +51,7 @@
   {$=take('index.title', 'lng')}
 </div> 
 <div class="right_con"> 
- <ul class="right_list" style="HEIGHT:480PX;"> 
+ <ul class="right_list"> 
   {@}
             <li><a href="{$=htmlEncode($createURL('detail', '{$id}'))}">{$topic}</a><span class="time">{$=formatDate('{$time}', '1')}</span></li>{@}
  </ul> 
@@ -107,24 +107,6 @@
 </div>   </div> 
   <!--end 内容--> 
 
-
-
-
-  <div class="container">
-    <div class="cupboard clear_float">
-      <div class="side">
-        <dl class="option clear_float">
-          <dt>{$=take('index.title', 'lng')}</dt>{$=transfer('genre=universal/category;type=@order;baseurl=./;tpl=dd-list', array('fid' => 0, 'genre' => '{$>genre}'))}
-        </dl>
-      </div>
-      <div class="main">
-        <div class="content">
-          <h1>{$topic}</h1>
-          <div class="text">{$=encodeText(#content)}</div>
-        </div>
-      </div>
-    </div>
-  </div>
 {$=take('.public.chinastyle_footer')}]]></default>
     </item>
   </item_list>
