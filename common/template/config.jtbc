@@ -24,6 +24,20 @@
     </item>
     <item>
       <name><![CDATA[pagi-2]]></name>
+      <default><![CDATA[
+        <li><a tagname="[HOMEPAGE]" class="" href="{$-firstpagelink}">首页</a></li> 
+        {@}
+          <li>
+            <a class="link {$-class}" href="{$-link}">{$-num}</a>
+          </li> 
+        {@}
+        <li><a tagname="[LASTPAGE]" class="" href="{$-lastpagelink}">尾页</a></li> 
+
+        ]]>
+      </default>
+    </item>
+     <item>
+      <name><![CDATA[pagi-3]]></name>
       <default><![CDATA[<a class="link first" href="{$-firstpagelink}">&laquo;</a>{@}<a class="link {$-class}" href="{$-link}">{$-num}</a>{@}<a class="link last" href="{$-lastpagelink}">&raquo;</a>]]></default>
     </item>
     <item>

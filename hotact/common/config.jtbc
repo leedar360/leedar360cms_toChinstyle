@@ -16,7 +16,7 @@
     </item>
     <item>
       <name><![CDATA[pagesize]]></name>
-      <zh-cn><![CDATA[20]]></zh-cn>
+      <zh-cn><![CDATA[10]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[upload_path]]></name>
