@@ -178,13 +178,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
         <!--搜索-->
       <div class="search f_r">
    <div class="search_1">
-       <form id="mySearchFormAction" class="search_form" method="post" action="/search/pcRender?pageId=71429fc2fa0145159a9dc774d5a5f133">
-      <input id="searchBoxApp" type="hidden" name="app" value=""/>
-      <input id="searchBoxAppName" type="hidden" name="appName" value=""/>
-      <input type="hidden" name="sr" id="sr" value=""/>
-      <input type="hidden" name="advtime" id="advtime" value=""/>
-      <input type="hidden" name="advrange" id="advrange" value=""/>
-      <input type="hidden" name="pNo" id="pNo" value=""/>
+       <form id="mySearchFormAction" class="search_form" method="get" action="/search/">
        <input type="text" list="searchinputlist" name="q" id="q"  autocomplete="off"  value="" class="input_1"><input type="submit" value="" class="input_2">
        </form>
    </div>
