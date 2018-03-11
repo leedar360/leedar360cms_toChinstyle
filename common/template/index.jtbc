@@ -335,6 +335,7 @@ $(".sp03").show()
      <span>产品中心</span> 
     </div> 
     <ul class="cpzx_list"> 
+<<<<<<< Updated upstream
 	<jtbc $function="transfer" $parameter="genre=universal/link;type=new;limit=6;group=2;orderby=id">
                     <li>
                         <a href={$url} target=_blank >
@@ -343,9 +344,55 @@ $(".sp03").show()
                         </li>
                         </jtbc>
           </ul>
+=======
+<<<<<<< Updated upstream
+     <li><a href="www.zhsc.net/" target="_blank">中华诗词网</a></li> 
+     <li><a href="bbs.zhsc.net/" target="_blank">中华诗词论坛</a></li> 
+     <li><a href="javascript:;">诗词中国客户端</a> 
+      <div style="WIDTH: 205px; TOP: -130px; LEFT: -40px" class="cp_ewm"> 
+       <p>安卓版客户端<br /><img src="{$=$global.assetspath}/images/index/sczg_az.png" /></p> 
+       <p style="PADDING-LEFT: 5px">苹果版客户端<br /><img src="{$=$global.assetspath}/images/index/sczg_pg.png" /></p> 
+      </div></li> 
+     <li><a href="javascript:;">诗词中国微信</a> 
+      <div class="cp_ewm"> 
+       <img src="{$=$global.assetspath}/images/index/sczgzwh.jpg" /> 
+      </div></li> 
+     <li><a href="javascript:;">书法中国微信</a> 
+      <div class="cp_ewm"> 
+       <img src="{$=$global.assetspath}/images/index/sfzg.jpg" /> 
+      </div></li> 
+     <li><a href="javascript:;">文创产品</a></li> 
+    </ul> 
+=======
+	<jtbc $function="transfer" $parameter="genre=universal/link;type=new;limit=6;group=2;orderby=id">
+		<li>
+     	<a href={$url} target=_blank class="productCenter" onclick="toshow()">
+       	{$topic} 
+       </a>
+       <div class="cp_ewm" id="productCenterImg"> 
+      	 <img src="{$image}" /> 
+      	</div>
+      </li>
+    </jtbc>
+   </ul>
+     <script>
+       alert($("a.productCenter"));
+       $("a.productCenter").mouseover(function(e){
+         alert(1)
+          $("div.cp_ewm").css("z-index",1);
+       }
+      function toshow(){
+          alert($("a.productCenter"));
+       }
+     </script>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
    </div> 
    <div class="clear"></div> 
   </div> 
+<span>AAA:
+{$=transfer('genre=universal/material;baseurl=./;tpl=video_single', array('id' => 1))}
+</span>
   <!--end 内容--> 
 {$=take('.public.chinastyle_footer')}]]></default>
     </item>
