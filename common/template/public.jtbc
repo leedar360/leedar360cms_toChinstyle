@@ -179,7 +179,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
       <div class="search f_r">
    <div class="search_1">
        <form id="mySearchFormAction" class="search_form" method="get" action="/search/">
-       <input type="text" list="searchinputlist" name="q" id="q"  autocomplete="off"  value="" class="input_1"><input type="submit" value="" class="input_2">
+       <input type="text" list="searchinputlist" name="keyword" id="q"  autocomplete="off"  value="" class="input_1"><input type="submit" value="" class="input_2">
        </form>
    </div>
 </div>
