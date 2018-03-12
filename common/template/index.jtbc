@@ -222,7 +222,7 @@ $(".sp0").show()
 
 
 <div class="list_img f_l"> 
- <span style="display:none" class="sp02"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="/download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="287" height="153"> <param name="movie" value="zbwh/uiFramework/images/zbwh_img/vcastr22.swf?vcastr_file=eportal/immovableDir/zbwh/resource/cms/2015/12/2015120210243915934.mp4"></param> <param name="quality" value="high"></param> <param name="allowFullScreen" value="true"></param> <embed src="zbwh/uiFramework/images/zbwh_img/vcastr22.swf?vcastr_file=eportal/immovableDir/zbwh/resource/cms/2015/12/2015120210243915934.mp4" allowfullscreen="true" quality="high" pluginspage="/www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="287" height="153" /> </object> </span> 
+ <span style="display:none" class="sp02">{$=transfer('genre=universal/material;baseurl=./;tpl=video_single', array('id' => 1))}</span> 
  <span style="display:none" class="img02"></span> 
 </div> 
 <script>
@@ -359,9 +359,6 @@ $(".sp03").show()
    </div> 
    <div class="clear"></div> 
   </div> 
-<span>AAA:
-{$=transfer('genre=universal/material;baseurl=./;tpl=video_single', array('id' => 1))}
-</span>
   <!--end 内容--> 
 {$=take('.public.chinastyle_footer')}]]></default>
     </item>
