@@ -45,8 +45,10 @@ ${filepath}${topic}
     <item>
       <name><![CDATA[video_single]]></name>
       <default><![CDATA[{@}
-<video width="320" height="240" controls="controls">
-  <source src="{$filepath}" type="video/mp4" />
+
+
+<video width="287" height="153" controls="controls">
+  <source src="universal/material/{$filepath}" type="video/mp4" />
 </video>
 {@}]]></default>
     </item>
