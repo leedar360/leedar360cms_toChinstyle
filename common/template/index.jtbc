@@ -336,16 +336,32 @@ $(".sp03").show()
     </div> 
     <ul class="cpzx_list"> 
 	<jtbc $function="transfer" $parameter="genre=universal/link;type=new;limit=6;group=2;orderby=id">
-                    <li>
-                        <a href={$url} target=_blank >
-                        {$topic} 
-                        </a>
-                        </li>
-                        </jtbc>
-          </ul>
+		<li>
+     	<a href={$url} target=_blank class="productCenter" onclick="toshow()">
+       	{$topic} 
+       </a>
+       <div class="cp_ewm" id="productCenterImg"> 
+      	 <img src="{$image}" /> 
+      	</div>
+      </li>
+    </jtbc>
+   </ul>
+     <script>
+       alert($("a.productCenter"));
+       $("a.productCenter").mouseover(function(e){
+         alert(1)
+          $("div.cp_ewm").css("z-index",1);
+       }
+      function toshow(){
+          alert($("a.productCenter"));
+       }
+     </script>
    </div> 
    <div class="clear"></div> 
   </div> 
+<span>AAA:
+{$=transfer('genre=universal/material;baseurl=./;tpl=video_single', array('id' => 1))}
+</span>
   <!--end 内容--> 
 {$=take('.public.chinastyle_footer')}]]></default>
     </item>

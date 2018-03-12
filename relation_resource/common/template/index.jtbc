@@ -62,7 +62,10 @@
 
 <div class="weizhi">
   当前位置： 
- <span><a class="SkinObject" href="{$topic}" target="_parent">网站首页</a>&nbsp;&gt;&nbsp;<a class="SkinObject" href="../../../zbwh/132877/index.html" target="_parent">动态播报</a></span> 
+ <span>
+  <a class="SkinObject" href="{$=getActualRoute('./')}" target="_parent">网站首页</a>&nbsp;&gt;&nbsp;
+  <a class="SkinObject" href="{$=getActualRoute('relation_resource')}" target="_parent">{$=take('index.title', 'lng')}</a>&nbsp;&gt;&nbsp;
+</span>
 </div> 
 <div class="pre"> 
  <div class="title_2">

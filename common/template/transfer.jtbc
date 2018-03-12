@@ -30,5 +30,25 @@
    </li>
 {@}]]></default>
     </item>
+    <item>
+      <name><![CDATA[metia_single]]></name>
+      <default><![CDATA[@
+${filepath}${topic}
+@]]></default>
+    </item>
+    <item>
+      <name><![CDATA[current_path]]></name>
+      <default><![CDATA[{@}
+<a href="{$-baseurl}{$=htmlEncode($createURL('list', '{$id}', null, '{$-genre}'))}">{$topic}</a>
+{@}]]></default>
+    </item>
+    <item>
+      <name><![CDATA[video_single]]></name>
+      <default><![CDATA[{@}
+<video width="320" height="240" controls="controls">
+  <source src="{$filepath}" type="video/mp4" />
+</video>
+{@}]]></default>
+    </item>
   </item_list>
 </xml>
