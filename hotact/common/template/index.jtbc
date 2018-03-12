@@ -48,7 +48,8 @@
 
 
 <div class="title_2">
-  {$=take('index.title', 'lng')}
+  {$=take('index.title', 'lng')}&nbsp;&nbsp;
+  {$=transfer('genre=universal/category;baseurl=./;tpl=current_hotact_category', array('id' => {$-category}))}
 </div> 
 <div class="right_con"> 
  <ul class="right_list"> 

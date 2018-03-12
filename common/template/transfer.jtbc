@@ -52,5 +52,11 @@ ${filepath}${topic}
 </video>
 {@}]]></default>
     </item>
+    <item>
+      <name><![CDATA[current_hotact_category]]></name>
+      <default><![CDATA[{@}
+{$topic}
+{@}]]></default>
+    </item>
   </item_list>
 </xml>
