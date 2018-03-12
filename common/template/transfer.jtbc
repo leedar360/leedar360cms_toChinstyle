@@ -45,7 +45,11 @@ ${filepath}${topic}
     <item>
       <name><![CDATA[video_single]]></name>
       <default><![CDATA[{@}
-<embed src="{$=$global.assetspath}/swf/vcastr22.swf?vcastr_file=universal/material/{$filepath}" allowfullscreen="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="287" height="153">
+
+
+<video width="287" height="153" controls="controls">
+  <source src="universal/material/{$filepath}" type="video/mp4" />
+</video>
 {@}]]></default>
     </item>
   </item_list>
